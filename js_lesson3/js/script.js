@@ -11,14 +11,14 @@ const myFloat = 42.0731;
 
 const myString = "42";
 
-console.log(myFloat);
-
 // 0 is always equal to "false" in JavaScript
 
 
 // Number Methods
+
 // The Number.isInteger() method determines whether the passed value is an integer.
 console.log(Number.isInteger(myString));
+// Expected output:
 
 // The Number.parseFloat() method parses an argument and returns a floating point number. If a number cannot be parsed form the argument, it returns NaN. 
 console.log(Number.isInteger(myString));
