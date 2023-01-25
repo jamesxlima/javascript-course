@@ -45,3 +45,13 @@ function myFunc2() {
 }
 
 myFunc2();
+
+// Global = Not in a function or block. Not desirable.
+// Local = In a function or block. Not global.
+// var instantiates function() scoped variables.
+// let and const instantiate {block} scoped variables.
+
+// Helpful Tips
+// ✅ Avoid using var. Stick with const and let.
+// ✅ Use const unless you need to reassign a value.
+// ✅ Use let if you know you will reassign a value.
