@@ -1,39 +1,23 @@
-// Functions
+// var, let, and const
 
-// Methods = Built-in Functions!
-// Example
-"James".toLowerCase();
+// Use "const" whenever you can
+// Use "let" when you know you're going to re-assign a value
+// "var" is the least used. Used mainly for legacy code.
 
-// Function Declaration Syntax:
-function sum() {
-  return 2 + 2;
+// Global Scope = Define a variable, give it a value and it is avaliable everywhere.
+var x = 1;
+let y = 2;
+const z = 3;
+
+// Local Scope
+{
+  let y = 4;
 }
 
-console.log(sum());
-
-// Passing Parameters to a function 
-function sum(num1, num2) {
-  return num1 + num2;
+// Function Scope
+function myFunc() {
+  const z = 5;
 }
-console.log(sum(3,4));
+myFunc();
 
-// Example Function
-function getUserNameFromEmail(email) {
-  return email.slice(0, email.indexOf("@"));
-}
-console.log(getUserNameFromEmail("playerOne@SomeRandomEmail.com"));
-
-// Arrow Function
-const getUserNameFromEmail = (email) => {
-  return email.slice(0, email.indexOf("@"));
-}
-console.log(getUserNameFromEmail("james@SomeRandomEmail.com"));
-
-// Creating A Function: toProperCase()
-// First letter of the string will be capitalized. 
-const toProperCase = (myName) => {
-  return myName.charAt(0).toUpperCase() + myName.slice(1).toLowerCase();
-};
-console.log(toProperCase("jAmES"));
-
-// Functions provide re-usable code!
+// If statements, for loops, and switch statements have block scopes.
