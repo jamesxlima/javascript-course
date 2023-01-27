@@ -39,3 +39,25 @@ truck.doors = 2;
 console.log(truck);
 console.log(truck.wheels); // Inheritance
 console.log(truck.engine());
+
+const band = {
+  guitar: "Jimi Hendrix",
+  bass: "Noel Redding",
+  drums: "Mitch Mitchell",
+};
+console.log(Object.keys(band)); //Object.keys() ex: guitar
+console.log(Object.values(band)); // Object.values() ex: Jimi Hendrix
+// delete band.drums; => to delete an object value
+
+// Using a for-in loop, to loop through an object
+for (let job in band) {
+  console.log(band[job]);
+  console.log(`On ${job}, it's ${band[job]}!`); //Using values inside for-in loops
+}
+
+// Destructuring Objects
+
+// Define variables by naming the key in an object the we want to pull the variable from
+
+const { guitar: myVariable } = band;
+console.log(myVariable);
