@@ -17,3 +17,14 @@ const doSomething = () => {
 
 // Using a function name in the event listener
 h2.addEventListener("click", doSomething, false);
+
+// Removing a function with a name: removeEventListener()
+h2.removeEventListener("click", doSomething, false);
+
+// Using an anonymous function in the event listener
+h2.addEventListener("click", (event) => {
+    console.log(event.target);
+    event.target.textContent = "Clicked";
+})
+
+// Listening for the readystatechange event
