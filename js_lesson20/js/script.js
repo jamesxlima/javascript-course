@@ -36,19 +36,32 @@ document.addEventListener("readystatechange", (event) => {
 });
 
 const initApp = () => {
-    const view = document.querySelector("#view2");
-    const div = view.querySelector("div");
-    const h2 = view.querySelector("h2");
-    
-    view.addEventListener("click", (event) => {
-        view.style.backgroundColor = "purple";
-    })
-    
-    div.addEventListener("click", (event) => {
-        div.style.backgroundColor = "blue";
-    })
-    
-    h2.addEventListener("click", (event) => {
-        event.target.textContent = "Clicked";
-    })
-}
+  const view = document.querySelector("#view2");
+  const div = view.querySelector("div");
+  const h2 = view.querySelector("h2");
+
+  view.addEventListener("click", (event) => {
+    view.style.backgroundColor = "purple";
+  });
+
+  div.addEventListener("click", (event) => {
+    div.style.backgroundColor = "blue";
+  });
+
+  h2.addEventListener("click", (event) => {
+    event.target.textContent = "Clicked";
+  });
+};
+
+// classList, add, remove, and toggle
+view.addEventListener("click", (event) => {
+    view.classList.add("purple");
+    view.classList.remove("darkblue");
+    view.classList.toggle("darkblue");
+  });
+
+  // Prevent default behavior with event.preventDefault()
+  const initApp2 = () => {
+    const view3 = document.querySelector("#view3");
+    const myForm = document.querySelector("#myForm");
+  }
